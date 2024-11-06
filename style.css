@@ -1,0 +1,48 @@
+.container{
+   display: block;
+   margin: 35px 40%;
+}
+.fisrt-div{
+    height: 600px;
+    width: 300px;
+    border: 2px solid black;
+}
+.image{
+    height: 40%;
+    width:65%;
+    margin: 0px 50px;
+}
+.watch-Name{
+    font-weight: bold;
+    font-size: 25px;
+}
+.watch-text{
+    font-size: 20px;
+}
+.watch-rate{
+    font-size: 25px;
+}
+.name{
+ display: block;
+ margin: 0px 40px;
+}
+
+.div-sec{
+    display: block;
+    margin: 10px 38px;
+}
+.color{
+    color: gray;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 20px;
+
+}

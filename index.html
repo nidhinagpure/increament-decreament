@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increament and decreament</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="fisrt-div">
+        <img src="./image/watchone.jpg" class="image"><br> 
+
+        <div class="div-sec">
+        <span class="watch-Name name">GIORDANO</span><br>
+        <span class="watch-text text-center">Eleganza Collection Round</span><br>
+        <span class="watch-texttext-center">Analog Watch for Women..</span><br>
+        <span class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⭐⭐⭐⭐&nbsp;230</span><br><br>
+        <sup>₹</sup><span class="watch-rate">3,499</span><span class="color">M.R.P:₹7,390(53%</span><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off)</span><br>
+        <span class="text-center color">&nbsp;&nbsp;10% Off on Select Bank Cards</span><br><br>
+        <span class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get it by Friday 8 </span><br>
+        <span class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;November</span><br>
+        <span class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;FREE Delivery by Amazon</span>
+
+        <div class="icons">
+        <img src="./image/minus.png" class="icon" onclick="dec()"/> &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="number">1</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./image/add.png" class="icon" onclick="inc()"/>
+    </div>
+    </div>
+    <script>
+        const valueElement = document.getElementById('number');
+
+        function inc(){
+            let number = parseInt(valueElement.innerText);
+            valueElement.innerText = ++number;
+        }
+
+        function dec(){
+            let values = parseInt(valueElement.innerText);
+
+            if(values>1){
+                valueElement.innerText = --values;
+            }
+        }
+    </script>
+
+</body>
+</html>
